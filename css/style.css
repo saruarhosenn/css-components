@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+a,
+p,
+span {
+  font-weight: 400;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.container > * {
+  margin: 40px 0;
+}
+
+.title {
+  display: table;
+  position: relative;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.title::after {
+  content: "";
+  width: 150px;
+  height: 3px;
+  background-color: brown;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/*
+------------------------
+Writing Mode 
+----------------------------------------- 
+*/
+.writing-mode-text {
+  font-size: 30px;
+  writing-mode: vertical-lr;
+}
+
+/*
+------------------------
+Scroll Snapping
+----------------------------------------- 
+*/
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: navy;
+  height: 60px;
+}
+
+.wrapper {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.wrapper .item {
+  min-width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .item:nth-child(odd) {
+  background-color: aquamarine;
+}
+
+.wrapper .item:nth-child(even) {
+  background-color: brown;
+}
+
+.wrapper .item h2 {
+  font-size: 40px;
+}
+
+/* 
+------------------------
+Text Gradients 
+----------------------------------------- 
+*/
+.text-gradients {
+  display: table;
+  font-size: 30px;
+  background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
